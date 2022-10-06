@@ -8,15 +8,17 @@ public class Multiplyx
         Scanner kboard  = new Scanner(System.in);
 
         System.out.println("Enter an integer:"); // Asks for integer
-        int a = kboard.nextInt();
+        String a = kboard.nextLine();
 
-        String firstName = kboard.nextLine();
+        
         System.out.println("What is your first name?"); // Asks for first name
-        firstName = kboard.nextLine();
+        String firstName = kboard.nextLine();
+        //firstName = kboard.nextLine();
 
         System.out.println("What is your last name?"); // Asks for last name
         String lastName = kboard.nextLine();
-        int x = a;
+
+        int x = Integer.valueOf(a);
         int y = x * 2; // Does input integer times 2
 
         System.out.println("Hello " + firstName + " " + lastName + ", The answer is 2 * " + a + " = " + y); // Output message

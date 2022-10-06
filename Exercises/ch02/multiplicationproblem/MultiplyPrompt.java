@@ -12,6 +12,9 @@ public class MultiplyPrompt
 
         System.out.println("Enter second number;");
         String secondNumber = kb.nextLine();
+        
+        System.out.println("Enter second number;");
+        
 
         int x = Integer.parseInt(firstNumber);
         int y = Integer.parseInt(secondNumber);
