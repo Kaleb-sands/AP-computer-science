@@ -16,7 +16,6 @@ public class Multiplyx
 
         System.out.println("What is your last name?"); // Asks for last name
         String lastName = kboard.nextLine();
-
         int x = a;
         int y = x * 2; // Does input integer times 2
 
