@@ -5,16 +5,23 @@ public class Multiplyx
 {
     public static void main(String[]args)
     {
-        Scanner kb  = new Scanner(System.in);
+        Scanner kboard  = new Scanner(System.in);
 
-        System.out.println("Enter an integer:");
-        String a = kb.nextLine();
+        System.out.println("Enter an integer:"); // Asks for integer
+        int a = kboard.nextInt();
 
-        int x = Integer.parseInt(a);
-        int y = x * 2;
+        String firstName = kboard.nextLine();
+        System.out.println("What is your first name?"); // Asks for first name
+        firstName = kboard.nextLine();
 
-        System.out.println("2 * " + a + " = " + y);
-        kb.close();
+        System.out.println("What is your last name?"); // Asks for last name
+        String lastName = kboard.nextLine();
+
+        int x = a;
+        int y = x * 2; // Does input integer times 2
+
+        System.out.println("Hello " + firstName + " " + lastName + ", The answer is 2 * " + a + " = " + y); // Output message
+        kboard.close();
     }
         
 }
