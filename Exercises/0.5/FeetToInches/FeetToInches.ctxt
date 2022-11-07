@@ -1,0 +1,6 @@
+#BlueJ class context
+comment0.target=FeetToInches
+comment0.text=\n\ This\ class\ converts\ feet\ and\ inches\ to\ inches\n
+comment1.params=feet\ inches
+comment1.target=int\ toInches(int,\ int)
+numComments=2

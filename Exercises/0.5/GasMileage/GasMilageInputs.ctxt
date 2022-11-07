@@ -1,0 +1,9 @@
+#BlueJ class context
+comment0.target=GasMilageInputs
+comment1.params=args
+comment1.target=void\ main(java.lang.String[])
+comment2.params=kb
+comment2.target=void\ mileagePrompt(java.util.Scanner)
+comment3.params=kb
+comment3.target=void\ gallonPrompt(java.util.Scanner)
+numComments=4

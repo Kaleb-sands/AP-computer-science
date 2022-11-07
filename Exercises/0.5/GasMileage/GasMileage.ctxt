@@ -1,0 +1,8 @@
+#BlueJ class context
+comment0.target=GasMileage
+comment0.text=\n\ This\ class\ calculates\ gas\ mileage\ based\ on\ user\ input\n
+comment1.params=milesTravled\ gallonsSpent
+comment1.target=double\ mileageCalculator(int,\ double)
+comment2.params=miles\ mPG
+comment2.target=double\ gallonCalculator(int,\ double)
+numComments=3

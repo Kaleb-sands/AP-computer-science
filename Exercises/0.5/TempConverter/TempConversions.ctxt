@@ -1,0 +1,7 @@
+#BlueJ class context
+comment0.target=TempConversions
+comment1.params=tempF
+comment1.target=double\ convertToCelcius(int)
+comment2.params=tempC
+comment2.target=double\ convertToFehrenheit(int)
+numComments=3
