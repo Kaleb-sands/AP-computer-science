@@ -1,0 +1,10 @@
+#BlueJ class context
+comment0.target=TextWriter
+comment0.text=\n\ This\ class\ takes\ an\ input\ and\ outputs\ it\ as\ a\ print.\n
+comment1.params=userText
+comment1.target=void\ setInputText(java.lang.String)
+comment2.params=
+comment2.target=java.lang.String\ getInputText()
+comment3.params=
+comment3.target=void\ displayInputText()
+numComments=4

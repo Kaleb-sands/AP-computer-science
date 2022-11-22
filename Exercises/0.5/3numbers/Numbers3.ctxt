@@ -1,0 +1,7 @@
+#BlueJ class context
+comment0.target=Numbers3
+comment1.params=num1\ num2\ num3
+comment1.target=double\ averageCalc(int,\ int,\ int)
+comment2.params=l\ w\ h
+comment2.target=int\ surfaceArea(int,\ int,\ int)
+numComments=3
