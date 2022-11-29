@@ -1,7 +1,7 @@
 public class ElevatorApp{
     public static void main(String[] args){
         Elevator east = new Elevator();
-        east.setName("east Elevator");
+        east.setName("East Elevator");
         east.setTopFloor(50);
         east.setCapacity(10);
         east.setCurrentFloor(1);
@@ -23,7 +23,7 @@ public class ElevatorApp{
         east.displayInfo();
 
         Elevator west = new Elevator();
-        west.setName("west Elevator");
+        west.setName("West Elevator");
         west.setTopFloor(100);
         west.setCapacity(20);
         west.setCurrentFloor(75);
