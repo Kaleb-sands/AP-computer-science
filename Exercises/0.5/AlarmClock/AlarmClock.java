@@ -88,7 +88,7 @@ public class AlarmClock{
         if(alarmOn = true){
             System.out.println("The alarm is on");
         }
-        else{
+        if(alarmOn = false){
             System.out.println("The alarm is off");
         }
     }

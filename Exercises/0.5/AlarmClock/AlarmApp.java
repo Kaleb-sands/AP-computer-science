@@ -17,15 +17,15 @@ public class AlarmApp{
         alarm1.startAlarm();
         alarm1.displayCurrentTime();
         alarm1.displayAlarmTime();
-        alarm1.displayStatus();
+        System.out.println("the alarm is on: " + alarm1.getAlarmStatus());
 
         AlarmClock alarm2 = new AlarmClock();
         alarm2.setCurrentTime(4, 46, 0);
         alarm2.setAlarm(7, 30, 0);
-        alarm2.stopAlarm();
+        alarm2.setAlarmOn(false);
         alarm2.displayCurrentTime();
         alarm2.displayAlarmTime();
-        alarm1.displayStatus();
+        System.out.println("the alarm is on: " + alarm2.getAlarmStatus());
 
         kb.close();
     }
