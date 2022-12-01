@@ -85,10 +85,10 @@ public class AlarmClock{
         System.out.println("The alarm time is " + alarmHour + ":" + alarmMin + ":" + alarmSec);
     }
     public void displayStatus(){
-        if(alarmOn = true){
+        if(alarmOn){
             System.out.println("The alarm is on");
         }
-        if(alarmOn = false){
+        else{
             System.out.println("The alarm is off");
         }
     }

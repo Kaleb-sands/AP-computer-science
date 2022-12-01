@@ -17,7 +17,8 @@ public class AlarmApp{
         alarm1.startAlarm();
         alarm1.displayCurrentTime();
         alarm1.displayAlarmTime();
-        System.out.println("the alarm is on: " + alarm1.getAlarmStatus());
+        alarm1.displayStatus();
+        System.out.println("");
 
         AlarmClock alarm2 = new AlarmClock();
         alarm2.setCurrentTime(4, 46, 0);
@@ -25,7 +26,7 @@ public class AlarmApp{
         alarm2.setAlarmOn(false);
         alarm2.displayCurrentTime();
         alarm2.displayAlarmTime();
-        System.out.println("the alarm is on: " + alarm2.getAlarmStatus());
+        alarm2.displayStatus();
 
         kb.close();
     }
