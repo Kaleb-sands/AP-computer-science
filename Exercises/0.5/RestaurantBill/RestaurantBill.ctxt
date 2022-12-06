@@ -1,0 +1,19 @@
+#BlueJ class context
+comment0.target=RestaurantBill
+comment1.params=customerAge
+comment1.target=void\ setAge(int)
+comment2.params=givenTip
+comment2.target=void\ setTip(double)
+comment3.params=mealcharge
+comment3.target=void\ setCostOfMeal(double)
+comment4.params=
+comment4.target=void\ calculateTax()
+comment5.params=
+comment5.target=void\ calculateTip()
+comment6.params=
+comment6.target=void\ calculateTotal()
+comment7.params=
+comment7.target=void\ printRecipt()
+comment8.params=mealCharge\ setTip\ setAge
+comment8.target=void\ calculateRecipt(double,\ double,\ int)
+numComments=9
