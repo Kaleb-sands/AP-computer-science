@@ -9,13 +9,9 @@ public class CircleTest
         System.out.println("Enter a radius:");
         double radius = input.nextDouble();
         
-        Circle circleRegular = new Circle();
-        Circle circleDouble = new Circle();
-        Circle circleHalf = new Circle();
-  
-        circleRegular.setRadius(radius);
-        circleDouble.setRadius(radius*2);
-        circleHalf.setRadius(radius/2);
+        Circle circleRegular = new Circle(5, 5, radius);
+        Circle circleDouble = new Circle(5, 5, radius/2);
+        Circle circleHalf = new Circle(5, 5, radius*2);
      
        double areaRegular = circleRegular.calculateArea();
        double areaDouble = circleDouble.calculateArea();
