@@ -1,0 +1,21 @@
+#BlueJ class context
+comment0.target=Circle3
+comment1.params=
+comment1.target=Circle3()
+comment2.params=x\ y\ r
+comment2.target=Circle3(double,\ double,\ double)
+comment3.params=xCoord
+comment3.target=void\ seXCenter(double)
+comment4.params=yCoord
+comment4.target=void\ setYCenter(double)
+comment5.params=
+comment5.target=double\ getXCenter()
+comment6.params=
+comment6.target=double\ getYCenter()
+comment7.params=newRadius
+comment7.target=void\ setRadius(double)
+comment8.params=
+comment8.target=double\ getRadius()
+comment9.params=
+comment9.target=double\ calculateArea()
+numComments=10

@@ -7,95 +7,109 @@ public class Elevator
    private int topFloor;      // number of floors for this elevator
    private boolean doorOpen;   //true if doors are open,  false means doors are closed
    
-   //Setters and Getters for the field variables 
-
+   public Elevator(){ // Empty constructor
+    this.name = "Null";
+    this.capacity = 0;
+    this.topFloor = 0;
+   }
+   public Elevator(String title, int numPeople, int totalFloor){ // 3 variable constructor
+    this.name = title;
+    this.capacity = numPeople;
+    this.topFloor = totalFloor;
+   }
+   // Setters and Getters for the field variables 
    public void setName(String n) {
-       name = n;
+        this.name = n;
    }
 
    public void setCurrentFloor(int newFloor) {
-       currentFloor = newFloor;
+        this.currentFloor = newFloor;
    }
    
 
    
    
 public void setCapacity(int cap) {
-       capacity = cap;
+        this.capacity = cap;
    }
    
    public void setNumPeople(int p) {
-       numPeople = p;
+        this.numPeople = p;
    }
  
    public void setTopFloor(int maxFloor) {
-        topFloor = maxFloor;
+        this.topFloor = maxFloor;
    }
    public String getName() {
-       return name;
+       return this.name;
    }
 
    public void setDoorOpen(boolean d) {
-       doorOpen = d;
+        this.doorOpen = d;
    }
    public int getCurrentFloor() {
-       return currentFloor;
+        return this.currentFloor;
    }
         
    public int getCapacity() {
-       return capacity;
+        return this.capacity;
    }
    
    public int getNumPeople() {
-       return numPeople;
+        return this.numPeople;
    }
    
    public int getTopFloor() {
-        return topFloor;
+        return this.topFloor;
    }
    
    public boolean getDoorOpen() {
-       return doorOpen;
+        return this.doorOpen;
    }
    
    //METHOD ACTIONS
 
    public void goUp() {    // go up one floor
-       currentFloor++;
+        this.currentFloor++;
    }
    
    
    public void goDown() {  // go down one floor
-       currentFloor--;
+        this.currentFloor--;
    }
    
    public void goToFloor(int requestedFloor) {    // go to requested floor
-       currentFloor = requestedFloor;
+        this.currentFloor = requestedFloor;
    }
    
    public void addPeople(int numP) {    // add the number of people getting on
-       numPeople += numP;
+        this.numPeople += numP;
    }
     
    public void removePeople(int numP) {   // subtract the number of people getting off
-       numPeople -= numP;
+        this.numPeople -= numP;
    }
     
    public void openDoor(){     //open the doors
-       doorOpen = true;
+        this.doorOpen = true;
     }
     
     public void closeDoor() {  //close the doors
-        doorOpen = false;
+        this.doorOpen = false;
     }
     public void displayInfo(){
-        System.out.println("----" + name + "----");
-        System.out.println("The current floor is: " + currentFloor);
-        System.out.println("The top floor is: " + topFloor);
-        System.out.println("The capacity is: " + capacity);
-        System.out.println("The doors are open: " + doorOpen);
-        System.out.println("There are " + numPeople + " on the elevator");
+        System.out.println("----" + this.name + "----");
+        System.out.println("The current floor is: " + this.currentFloor);
+        System.out.println("The top floor is: " + this.topFloor);
+        System.out.println("The capacity is: " + this.capacity);
+        System.out.println("The doors are open: " + this.doorOpen);
+        System.out.println("There are " + this.numPeople + " on the elevator");
         System.out.println("");
     }
-
+    public String toString(){
+        return "Name: " 
+        + this.name + "\nCapacity: "
+        + this.capacity + "\nCurrent Floor: "
+        + this.currentFloor;
+    }
 }
