@@ -15,6 +15,6 @@ public class Person
 		return name;
 	}
 	public void message()   {
-                       System.out.println("Person Class - Name: “ + name);
+                       System.out.println("Person Class - Name: " + name);
            }
 }
