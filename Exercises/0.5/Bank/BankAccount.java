@@ -63,4 +63,7 @@ public class BankAccount{
         + "\nAccount type: " + getChecking()
         + "\nBalance: $" + this.balance;
     }
+    public void printType(){
+        System.out.println(isChecking);
+    }
 }
