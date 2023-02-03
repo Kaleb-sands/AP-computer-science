@@ -1,5 +1,5 @@
 import java.util.Scanner;
-public class Main{
+public class BeatThat{
     public static void main(String[] args){
         int winCount = 0;
         int p1Wins = 0;
@@ -22,55 +22,15 @@ public class Main{
             System.out.println("|-" + p1 + " please press 1 to roll dice: ");
             int roll = kb.nextInt();
             if(roll == 1){
-                int p1roll1 = rollDice();
-                int p1roll2 = rollDice();
-                if(p1roll1 > p1roll2){
-                    p1total = p1roll1 * 10 + p1roll2;
-                }else{
-                    p1total = p1roll2 * 10 + p1roll1;
-                }
+                p1total = doPlayerturn(p1);
                 System.out.println("|-" + p1 + " rolled a " + p1total);
-                System.out.println("|-Press 1 if you would like to roll again and 2 to continue: ");
-                int choice1 = kb.nextInt();
-                if(choice1 == 1){
-                    p1roll1 = rollDice();
-                    p1roll2 = rollDice();
-                    if(p1roll1 > p1roll2){
-                        p1total = p1roll1 * 10 + p1roll2;
-                    }
-                    else{
-                        p1total = p1roll2 * 10 + p1roll1;
-                    }
-                    System.out.println("|-" + p1 + " rolled a " + p1total);
-                    System.out.println("|-Now its time for " + p2 + " to roll!");
-                }else{
-                    System.out.println("|-Now its time for " + p2 + " to roll!");
-                }
+                System.out.println("|-Now its time for " + p2 + " to roll!");
             }
             System.out.println("|-" + p2 + " please press 1 to roll dice: ");
             int roll2 = kb.nextInt();
             if(roll2 == 1){
-                int p2roll1 = rollDice();
-                int p2roll2 = rollDice();
-                if(p2roll1 > p2roll2){
-                    p2total = p2roll1 * 10 + p2roll2;
-                }else{
-                    p2total = p2roll2 * 10 + p2roll1;
-                }
+                p2total = doPlayerturn(p2);
                 System.out.println("|-" + p2 + " rolled a " + p2total);
-                System.out.println("|-Press 1 if you would like to roll again and 2 to continue: ");
-                int choice2 = kb.nextInt();
-                if(choice2 == 1){
-                    p2roll1 = rollDice();
-                    p2roll2 = rollDice();
-                    if(p2roll1 > p2roll2){
-                        p2total = p2roll1 * 10 + p2roll2;
-                    }
-                    else{
-                        p2total = p2roll2 * 10 + p2roll1;
-                    }
-                    System.out.println("|-" + p2 + " rolled a " + p2total); 
-                }
             }
             if(p1total > p2total){
                 System.out.println("|-" + p1 + " won the game with " + p1total + " points!");
@@ -103,5 +63,30 @@ public class Main{
     public static int rollDice(){
         int roll = (int)(Math.random() * 6 + 1);
         return roll;
+    }
+    public static int doPlayerturn(String playerName){
+        int playerTotal =0;
+        Scanner kboard = new Scanner(System.in);
+            int p1roll1 = rollDice();
+            int p1roll2 = rollDice();
+            if(p1roll1 > p1roll2){
+                playerTotal = p1roll1 * 10 + p1roll2;
+            }else{
+                playerTotal = p1roll2 * 10 + p1roll1;
+            }
+            System.out.println("|-" + playerName + " rolled a " + playerTotal);
+            System.out.println("|-Press 1 if you would like to roll again and 2 to continue: ");
+            int choice1 = kboard.nextInt();
+            if(choice1 == 1){
+                p1roll1 = rollDice();
+                p1roll2 = rollDice();
+                if(p1roll1 > p1roll2){
+                    playerTotal = p1roll1 * 10 + p1roll2;
+                }else{
+                    playerTotal = p1roll2 * 10 + p1roll1;
+                }
+            }
+        kboard.close();
+        return playerTotal;
     }
 }
