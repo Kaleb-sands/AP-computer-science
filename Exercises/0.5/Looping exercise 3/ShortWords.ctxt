@@ -1,0 +1,5 @@
+#BlueJ class context
+comment0.target=ShortWords
+comment1.params=str\ maxLength
+comment1.target=void\ printShortWords(java.lang.String,\ int)
+numComments=2

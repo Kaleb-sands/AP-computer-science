@@ -1,0 +1,7 @@
+#BlueJ class context
+comment0.target=Main
+comment1.params=kb\ limit
+comment1.target=int\ getInput(java.util.Scanner,\ int)
+comment2.params=amt
+comment2.target=int\ calculateYearsTo3000(double)
+numComments=3
