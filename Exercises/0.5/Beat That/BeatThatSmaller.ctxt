@@ -1,7 +1,9 @@
 #BlueJ class context
-comment0.target=Main
+comment0.target=BeatThatSmaller
 comment1.params=args
 comment1.target=void\ main(java.lang.String[])
 comment2.params=
 comment2.target=int\ rollDice()
-numComments=3
+comment3.params=playerName
+comment3.target=int\ doPlayerTurn(java.lang.String)
+numComments=4

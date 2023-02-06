@@ -19,27 +19,27 @@ public class BeatThatFinal{
         for(boolean playGame = true; playGame; ){
             int p1total = 0;
             int p2total = 0;
-            System.out.println("|-" + p1 + " please press enter to roll dice: ");
+            System.out.println(p1 + " press enter to roll dice: ");
             kb.nextLine();
             p1total = doPlayerTurn(p1);
-            System.out.println("|-Now its time for " + p2 + " to roll!");
-            System.out.println("|-" + p2 + " please press enter to roll dice: ");
+            System.out.println("Now its time for " + p2 + " to roll!");
+            System.out.println(p2 + " press enter to roll dice: ");
             kb.nextLine();
             p2total = doPlayerTurn(p2);
             if(p1total > p2total){
-                System.out.println("|-" + p1 + " won the game with " + p1total + " points!");
+                System.out.println(p1 + " won the game with " + p1total + " points!");
                 winCount++;
                 p1Wins++;
             }else if(p2total > p1total){
-                System.out.println("|-" + p2 + " won the game with " + p2total + " points!");
+                System.out.println(p2 + " won the game with " + p2total + " points!");
                 winCount--;
                 p2Wins++;
             }else{
-                System.out.println("|-You both tied with " + p1total + " points!");
+                System.out.println("You both tied with " + p1total + " points!");
             }
-            System.out.println("|-" + p1 + " has " + p1Wins + " wins");
-            System.out.println("|-" + p2 + " has " + p2Wins + " wins");
-            System.out.println("|-Press 1 to play again or 2 to stop playing");
+            System.out.println(p1 + " has " + p1Wins + " wins");
+            System.out.println(p2 + " has " + p2Wins + " wins");
+            System.out.println("Press 1 to play again or 2 to stop playing");
             int keepPlaying = kb.nextInt();
             if(keepPlaying == 1){
                 playGame = true; 
@@ -48,11 +48,11 @@ public class BeatThatFinal{
             }
             }
         if(winCount < 0){
-            System.out.println("|-" + p2 + " Won the game with " + p2Wins + " wins!\n|-Good game!");
+            System.out.println(p2 + " won the game with " + p2Wins + " wins!\n|-Good game!");
         }else if(winCount > 0){
-            System.out.println("|-" + p1 + " Won the game with " + p1Wins + " wins!\n|-Good game!");
+            System.out.println(p1 + " won the game with " + p1Wins + " wins!\n|-Good game!");
         }else{
-            System.out.println("|-You both tied with " + p1Wins + " wins!");
+            System.out.println("You both tied with " + p1Wins + " wins!");
         }
         kb.close();
     }
@@ -73,9 +73,9 @@ public class BeatThatFinal{
             }else{
                 playerTotal = p1roll2 * 10 + p1roll1;
             }
-            System.out.println("|-" + playerName + " rolled a " + playerTotal);
+            System.out.println(playerName + " rolled a " + playerTotal);
             if(x == 0){
-                System.out.println("|-Press 1 if you would like to roll again and 2 to continue: ");
+                System.out.println("Press 1 to roll again and 2 to continue: ");
                 int rollAgain = kb.nextInt();
                 if(rollAgain == 2){
                     x = 2;
