@@ -39,7 +39,7 @@ public class BeatThatFinal{
             }
             System.out.println(p1 + " has " + p1Wins + " wins");
             System.out.println(p2 + " has " + p2Wins + " wins\n");
-            System.out.println("Press 1 to play again or 2 to stop playing");
+            System.out.println("Press 1 to play again or 2 to stop playing\n------------------------------------------");
             int keepPlaying = kb.nextInt();
             if(keepPlaying == 1){
                 playGame = true; 
