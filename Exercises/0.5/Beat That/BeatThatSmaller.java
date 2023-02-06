@@ -1,5 +1,5 @@
 import java.util.Scanner;
-public class BeatThatFinal{
+public class BeatThatSmaller{
     public static void main(String[] args){
         int winCount = 0;
         int p1Wins = 0;
@@ -19,13 +19,17 @@ public class BeatThatFinal{
         for(boolean playGame = true; playGame; ){
             int p1total = 0;
             int p2total = 0;
-            System.out.println("|-" + p1 + " please press enter to roll dice: ");
-            kb.nextLine();
-            p1total = doPlayerTurn(p1);
-            System.out.println("|-Now its time for " + p2 + " to roll!");
-            System.out.println("|-" + p2 + " please press enter to roll dice: ");
-            kb.nextLine();
-            p2total = doPlayerTurn(p2);
+            System.out.println("|-" + p1 + " please press 1 to roll dice: ");
+            int roll = kb.nextInt();
+            if(roll == 1){
+                p1total = doPlayerTurn(p1);
+                System.out.println("|-Now its time for " + p2 + " to roll!");
+            }
+            System.out.println("|-" + p2 + " please press 1 to roll dice: ");
+            int roll2 = kb.nextInt();
+            if(roll2 == 1){
+                p2total = doPlayerTurn(p2);
+            }
             if(p1total > p2total){
                 System.out.println("|-" + p1 + " won the game with " + p1total + " points!");
                 winCount++;
@@ -37,8 +41,6 @@ public class BeatThatFinal{
             }else{
                 System.out.println("|-You both tied with " + p1total + " points!");
             }
-            System.out.println("|-" + p1 + " has " + p1Wins + " wins");
-            System.out.println("|-" + p2 + " has " + p2Wins + " wins");
             System.out.println("|-Press 1 to play again or 2 to stop playing");
             int keepPlaying = kb.nextInt();
             if(keepPlaying == 1){

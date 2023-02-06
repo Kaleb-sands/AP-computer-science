@@ -87,6 +87,6 @@ public class BeatThat{
                 }
             }
         kboard.close();
-        return playerTotal;
+        return playerTotal; 
     }
 }
