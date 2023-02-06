@@ -15,7 +15,7 @@ public class BeatThatFinal{
         String p2 = kb.nextLine();
         System.out.println("|-Player 2: " + p2);
         System.out.println("|-Get ready to play!        |");
-        System.out.println("|---------------------------|");
+        System.out.println("|---------------------------|\n ");
         for(boolean playGame = true; playGame; ){
             int p1total = 0;
             int p2total = 0;
@@ -27,18 +27,18 @@ public class BeatThatFinal{
             kb.nextLine();
             p2total = doPlayerTurn(p2);
             if(p1total > p2total){
-                System.out.println(p1 + " won the game with " + p1total + " points!");
+                System.out.println(p1 + " won the game with " + p1total + " points!\n");
                 winCount++;
                 p1Wins++;
             }else if(p2total > p1total){
-                System.out.println(p2 + " won the game with " + p2total + " points!");
+                System.out.println(p2 + " won the game with " + p2total + " points!\n");
                 winCount--;
                 p2Wins++;
             }else{
-                System.out.println("You both tied with " + p1total + " points!");
+                System.out.println("You both tied with " + p1total + " points!\n");
             }
             System.out.println(p1 + " has " + p1Wins + " wins");
-            System.out.println(p2 + " has " + p2Wins + " wins");
+            System.out.println(p2 + " has " + p2Wins + " wins\n");
             System.out.println("Press 1 to play again or 2 to stop playing");
             int keepPlaying = kb.nextInt();
             if(keepPlaying == 1){
