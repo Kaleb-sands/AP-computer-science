@@ -1,0 +1,7 @@
+#BlueJ class context
+comment0.target=StringTest
+comment1.params=str1\ sub
+comment1.target=void\ findIndexOfString(java.lang.String,\ java.lang.String)
+comment2.params=str1\ str2
+comment2.target=void\ compareStrings(java.lang.String,\ java.lang.String)
+numComments=3
