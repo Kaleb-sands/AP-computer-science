@@ -1,5 +1,6 @@
 {
     "java.project.sourcePaths": [
+        "Exercises/0.5/object arrays",
         "Exercises/0.5/if lab",
         "Exercises/0.5/animallab",
         "Exercises/0.5/TempConverter",
@@ -21,8 +22,10 @@
         "Exercises/0.5/Beat That",
         "Exercises/0.5/Bear",
         "Exercises/0.5/Bank",
+        "Exercises/0.5/Array exercise",
         "Exercises/0.5/AlarmClock",
         "Exercises/0.5/AB class",
-        "Exercises/0.5/Array exercise"
+        "Exercises/0.5/2d Arrays",
+        "Exercises/0.5/GradeBook"
     ]
 }
