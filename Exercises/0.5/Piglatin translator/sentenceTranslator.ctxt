@@ -1,0 +1,7 @@
+#BlueJ class context
+comment0.target=sentenceTranslator
+comment1.params=input
+comment1.target=java.lang.String\ translate(java.lang.String)
+comment2.params=word
+comment2.target=java.lang.String\ translateWord(java.lang.String)
+numComments=3

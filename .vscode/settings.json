@@ -5,6 +5,8 @@
         "Exercises/0.5/animallab",
         "Exercises/0.5/TempConverter",
         "Exercises/0.5/RestaurantBill",
+        "Exercises/0.5/Practice",
+        "Exercises/0.5/Piglatin translator",
         "Exercises/0.5/MyWriter",
         "Exercises/0.5/MountainBike",
         "Exercises/0.5/LabPractice",
@@ -18,6 +20,7 @@
         "Exercises/0.5/Elevator part 2",
         "Exercises/0.5/Elevator",
         "Exercises/0.5/Dog years to human years",
+        "Exercises/0.5/Digits",
         "Exercises/0.5/CircleLab",
         "Exercises/0.5/Circle lab 3",
         "Exercises/0.5/Beat That",
@@ -27,6 +30,6 @@
         "Exercises/0.5/AlarmClock",
         "Exercises/0.5/AB class",
         "Exercises/0.5/2d Arrays",
-        "Exercises/0.5/Digits"
+        "Exercises/0.5/TicTacToe"
     ]
 }
