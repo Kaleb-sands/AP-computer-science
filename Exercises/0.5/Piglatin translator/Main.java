@@ -5,5 +5,6 @@ public class Main{
         System.out.println("Enter your Sentence: ");
         String input = kb.nextLine();
         System.out.println("Your Translated Sentence is: " + sentenceTranslator.translate(input));
+        kb.close();
     }
 }

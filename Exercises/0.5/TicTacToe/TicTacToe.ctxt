@@ -1,7 +1,23 @@
 #BlueJ class context
 comment0.target=TicTacToe
 comment1.params=
-comment1.target=void\ print()
+comment1.target=TicTacToe()
+comment10.params=
+comment10.target=void\ displayboard()
 comment2.params=
-comment2.target=void\ main()
-numComments=3
+comment2.target=void\ initializeBoard()
+comment3.params=
+comment3.target=boolean\ isBoardFull()
+comment4.params=r\ c
+comment4.target=boolean\ isEmpty(int,\ int)
+comment5.params=r\ c\ marker
+comment5.target=boolean\ placeMarker(int,\ int,\ java.lang.String)
+comment6.params=player
+comment6.target=boolean\ checkDiagsForWin(java.lang.String)
+comment7.params=player
+comment7.target=boolean\ checkRowsForWin(java.lang.String)
+comment8.params=player
+comment8.target=boolean\ checkColsForWin(java.lang.String)
+comment9.params=player
+comment9.target=boolean\ checkForWin(java.lang.String)
+numComments=11
